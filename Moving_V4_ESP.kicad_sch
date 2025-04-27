@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "ESP Mini PF base circuit")
+    (date "2025-04-27")
+    (rev "0.1")
+  )
+
   (lib_symbols
     (symbol "Connector:Conn_01x02_Socket" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 2.54 0)
