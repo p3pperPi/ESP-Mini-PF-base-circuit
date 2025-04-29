@@ -44,36 +44,36 @@ D2, D3, D4はESP32から点灯/消灯 を管理可能です。
 
 ESP32-WROOM-32のピンアサインは下記の通りです。
 
-| ピン｜IO | 機能     | I/O            |
-| -------- | -------- | -------------- |
-| 27       | IO16     | モータL出力1   |
-| 28       | IO17     | モータL出力2   |
-| 30       | IO18     | モータR出力1   |
-| 31       | IO19     | モータR出力2   |
-| 34       | IO3/RxD0 | PCとのUART RxD |
-| 35       | IO1/TxD0 | PCとのUART TxD |
-| 25       | IO0      | Boot           |
-| 9        | IO33     | ラインセンサ1  |
-| 6        | IO34     | ラインセンサ2  |
-| 8        | IO32     | ラインセンサ3  |
-| 33       | IO21     | LED 赤         |
-| 36       | IO22     | LED 黄         |
-| 37       | IO23     | LED 緑         |
+| ピン | IO pin   | 機能           | IN/OUT       |
+| ---- | -------- | -------------- | ------------ |
+| 27   | IO16     | モータL出力1   | OUT (PWM)    |
+| 28   | IO17     | モータL出力2   | OUT (PWM)    |
+| 30   | IO18     | モータR出力1   | OUT (PWM)    |
+| 31   | IO19     | モータR出力2   | OUT (PWM)    |
+| 34   | IO3/RxD0 | PCとのUART RxD | IN (COM.)    |
+| 35   | IO1/TxD0 | PCとのUART TxD | OUT (COM.)   |
+| 25   | IO0      | Boot           | -            |
+| 9    | IO33     | ラインセンサ1  | IN(Analog)   |
+| 6    | IO34     | ラインセンサ2  | IN(Analog)   |
+| 8    | IO32     | ラインセンサ3  | IN(Analog)   |
+| 33   | IO21     | LED 赤         | OUT(Digital) |
+| 36   | IO22     | LED 黄         | OUT(Digital) |
+| 37   | IO23     | LED 緑         | OUT(Digital) |
 
 なお、ESP32-S3も使用可能。その場合のピンアサインは下記の通りです。
 
-| ピン｜IO | 機能 | I/O            |
-| -------- | ---- | -------------- |
-| 29       | IO36 | モータL出力1   |
-| 30       | IO37 | モータL出力2   |
-| 32       | IO39 | モータR出力1   |
-| 33       | IO40 | モータR出力2   |
-| 36       | RxD0 | PCとのUART RxD |
-| 37       | TxD0 | PCとのUART TxD |
-| 27       | IO0  | Boot           |
-| 9        | IO16 | ラインセンサ1  |
-| 6        | IO6  | ラインセンサ2  |
-| 8        | IO15 | ラインセンサ3  |
-| 35       | IO42 | LED 赤         |
-| 38       | IO2  | LED 黄         |
-| 39       | IO1  | LED 緑         |
+| ピン | IO pin | 機能           | IN/OUT       |
+| ---- | ------ | -------------- | ------------ |
+| 29   | IO36   | モータL出力1   | OUT (PWM)    |
+| 30   | IO37   | モータL出力2   | OUT (PWM)    |
+| 32   | IO39   | モータR出力1   | OUT (PWM)    |
+| 33   | IO40   | モータR出力2   | OUT (PWM)    |
+| 36   | RxD0   | PCとのUART RxD | IN (COM.)    |
+| 37   | TxD0   | PCとのUART TxD | OUT (COM.)   |
+| 27   | IO0    | Boot           | -            |
+| 9    | IO16   | ラインセンサ1  | IN(Analog)   |
+| 6    | IO6    | ラインセンサ2  | IN(Analog)   |
+| 8    | IO15   | ラインセンサ3  | IN(Analog)   |
+| 35   | IO42   | LED 赤         | OUT(Digital) |
+| 38   | IO2    | LED 黄         | OUT(Digital) |
+| 39   | IO1    | LED 緑         | OUT(Digital) |
