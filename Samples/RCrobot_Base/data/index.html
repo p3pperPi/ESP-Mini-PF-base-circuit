@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 100vh;
+    }
+    .box {
+      border: 1px solid #ccc;
+      padding: 8px;
+      overflow: auto;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+    }
+    #log {
+      font-size: 0.9em;
+      white-space: pre-wrap;
+    }
+    .control-button {
+      width: 45%;
+      padding: 10px;
+      margin: 5px;
+      font-size: 1em;
+      touch-action: manipulation;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"><canvas id="adcChart"></canvas></div>
+  <div class="box"><canvas id="posChart"></canvas></div>
+  <div class="box" id="log">ログ...</div>
+  <div class="box">
+    <div id="status">Status: --</div>
+    <button class="control-button" data-cmd="F">前進</button>
+    <button class="control-button" data-cmd="B">後退</button><br>
+    <button class="control-button" data-cmd="R">右旋回</button>
+    <button class="control-button" data-cmd="L">左旋回</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    let ws = new WebSocket("ws://" + location.hostname + ":81");
+    let adcChart = new Chart(document.getElementById('adcChart'), {
+      type: 'line',
+      data: {
+        labels: [],
+        datasets: [
+          { label: 'S1', data: [], borderColor: 'red' },
+          { label: 'S2', data: [], borderColor: 'green' },
+          { label: 'S3', data: [], borderColor: 'blue' }
+        ]
+      },
+      options: {
+        scales: { y: { min: 0, max: 1023 }, x: { display: false } },
+        animation: false
+      }
+    });
+
+    let posChart = new Chart(document.getElementById('posChart'), {
+      type: 'line',
+      data: {
+        labels: [],
+        datasets: [{ label: 'Position', data: [], borderColor: 'purple' }]
+      },
+      options: {
+        scales: { y: { min: -100, max: 100 }, x: { display: false } },
+        animation: false
+      }
+    });
+
+    let labels = [];
+    function updateCharts(data) {
+      let t = new Date().toLocaleTimeString();
+      labels.push(t);
+      if (labels.length > 20) labels.shift();
+
+      adcChart.data.labels = labels;
+      adcChart.data.datasets[0].data.push(data.s1); if (adcChart.data.datasets[0].data.length > 20) adcChart.data.datasets[0].data.shift();
+      adcChart.data.datasets[1].data.push(data.s2); if (adcChart.data.datasets[1].data.length > 20) adcChart.data.datasets[1].data.shift();
+      adcChart.data.datasets[2].data.push(data.s3); if (adcChart.data.datasets[2].data.length > 20) adcChart.data.datasets[2].data.shift();
+      posChart.data.labels = labels;
+      posChart.data.datasets[0].data.push(data.pos); if (posChart.data.datasets[0].data.length > 20) posChart.data.datasets[0].data.shift();
+
+      adcChart.update();
+      posChart.update();
+    }
+
+    ws.onmessage = (e) => {
+      let d = JSON.parse(e.data);
+      updateCharts({ s1: d.s1, s2: d.s2, s3: d.s3, pos: d.position });
+      document.getElementById("status").innerText = "Status: " + d.status;
+
+      // 最新ログを上に表示
+      let logs = d.log.reverse().join("\n");
+      document.getElementById("log").innerText = logs;
+    };
+
+    function sendCommand(cmd) {
+      if (ws.readyState === 1) ws.send("CMD:" + cmd);
+    }
+
+    let commandInterval = null;
+    let currentCommand = '';
+
+    function startSendingCommand(cmd) {
+      stopSendingCommand(); // 念のため停止
+      currentCommand = cmd;
+      sendCommand(cmd); // 即時送信
+      commandInterval = setInterval(() => {
+        sendCommand(currentCommand);
+      }, 100); // 10Hz
+    }
+
+    function stopSendingCommand() {
+      if (commandInterval) {
+        clearInterval(commandInterval);
+        commandInterval = null;
+      }
+      sendCommand("S"); // 停止コマンド送信
+    }
+
+    // イベント登録：ボタンを押してる間だけ10Hz送信
+    document.querySelectorAll('.control-button').forEach(btn => {
+      const command = btn.getAttribute('data-cmd');
+
+      btn.addEventListener('mousedown', () => startSendingCommand(command));
+      btn.addEventListener('mouseup', stopSendingCommand);
+      btn.addEventListener('mouseleave', stopSendingCommand);
+
+      btn.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        startSendingCommand(command);
+      });
+      btn.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        stopSendingCommand();
+      });
+    });
+  </script>
+</body>
+</html>
