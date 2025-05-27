@@ -3985,7 +3985,7 @@
   (symbol (lib_id "power:GND") (at 63.5 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 003427db-cc3b-4b32-8a8a-aaf7ceab3cf5)
-    (property "Reference" "#PWR010" (at 63.5 130.81 0)
+    (property "Reference" "#PWR013" (at 63.5 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.5 128.5931 0)
@@ -4001,7 +4001,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -4010,7 +4010,7 @@
   (symbol (lib_id "power:GND") (at 179.07 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 017f8658-57cd-43de-9e64-a93a6ecccad7)
-    (property "Reference" "#PWR05" (at 179.07 166.37 0)
+    (property "Reference" "#PWR030" (at 179.07 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 179.07 164.1531 0)
@@ -4026,7 +4026,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -4035,7 +4035,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 121.285 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0250648a-2687-4b9c-a4ba-ea29bf088442)
-    (property "Reference" "C6" (at 124.206 182.0489 0)
+    (property "Reference" "C11" (at 124.206 182.0489 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470u" (at 124.206 184.4731 0)
@@ -4055,7 +4055,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C6") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -4090,7 +4090,7 @@
   (symbol (lib_id "power:+3.3V") (at 246.38 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 04834a95-a7e7-4a3d-b0ad-78953a6852a4)
-    (property "Reference" "#PWR044" (at 246.38 24.13 0)
+    (property "Reference" "#PWR043" (at 246.38 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 246.38 16.1869 0)
@@ -4106,7 +4106,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -4115,7 +4115,7 @@
   (symbol (lib_id "power:GND") (at 106.68 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 04dcb77a-5270-488d-887d-659577bca7d6)
-    (property "Reference" "#PWR023" (at 106.68 140.97 0)
+    (property "Reference" "#PWR021" (at 106.68 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.68 138.7531 0)
@@ -4131,7 +4131,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -4166,10 +4166,10 @@
   (symbol (lib_id "Device:R") (at 55.88 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 097fc82e-13ef-47bd-8008-4ea21ea27a12)
-    (property "Reference" "R26" (at 57.658 24.1879 0)
+    (property "Reference" "R1" (at 58.42 24.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "18k" (at 57.658 26.6121 0)
+    (property "Value" "18k" (at 58.42 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 54.102 25.4 90)
@@ -4186,7 +4186,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R26") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -4224,7 +4224,7 @@
   (symbol (lib_id "Device:R") (at 40.64 109.22 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0f74d58a-8258-46fd-a7e8-bea592d7c062)
-    (property "Reference" "R13" (at 40.64 113.665 90)
+    (property "Reference" "R4" (at 40.64 113.665 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22" (at 40.64 111.76 90)
@@ -4244,7 +4244,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R13") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -4253,7 +4253,7 @@
   (symbol (lib_id "power:GND") (at 238.76 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1459f46c-4fab-4d68-b851-404a317eed75)
-    (property "Reference" "#PWR045" (at 238.76 52.07 0)
+    (property "Reference" "#PWR042" (at 238.76 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 238.76 49.8531 0)
@@ -4269,7 +4269,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -4278,7 +4278,7 @@
   (symbol (lib_id "Device:C") (at 48.26 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 14884340-d1f0-416f-ad37-2b8235293237)
-    (property "Reference" "C12" (at 51.181 69.9079 0)
+    (property "Reference" "C2" (at 51.181 69.9079 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u(35V)" (at 51.181 72.3321 0)
@@ -4298,7 +4298,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C12") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -4307,7 +4307,7 @@
   (symbol (lib_id "power:GND") (at 190.5 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1722bd8a-f105-49a2-9d45-36b391842d11)
-    (property "Reference" "#PWR03" (at 190.5 129.54 0)
+    (property "Reference" "#PWR035" (at 190.5 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.5 127.3231 0)
@@ -4323,7 +4323,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
     )
@@ -4332,10 +4332,10 @@
   (symbol (lib_id "Device:R") (at 50.8 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 18949cbf-4c59-4695-8385-1c44552ba682)
-    (property "Reference" "R22" (at 52.578 143.5679 0)
+    (property "Reference" "R18" (at 53.34 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1k" (at 52.578 145.9921 0)
+    (property "Value" "1k" (at 53.34 146.05 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 49.022 144.78 90)
@@ -4352,7 +4352,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R22") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -4387,10 +4387,10 @@
   (symbol (lib_id "Device:LED") (at 179.07 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d34e50c-6c58-42b6-8cb1-912c1a478cac)
-    (property "Reference" "D2" (at 181.991 152.7754 90)
+    (property "Reference" "D3" (at 182.88 152.7175 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "LED_R" (at 181.991 155.1996 90)
+    (property "Value" "LED_R" (at 182.88 155.2575 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "LED_THT:LED_D3.0mm" (at 179.07 152.4 0)
@@ -4402,12 +4402,12 @@
     (property "LCSC" "x" (at 179.07 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9c4b4850-5483-474c-8886-34ef50bdbd58))
-    (pin "2" (uuid 014412a0-4431-4dff-bed2-289ff5bc3854))
+    (pin "1" (uuid 3ae345dc-1307-4566-a67a-5958e7cb65ba))
+    (pin "2" (uuid a3370af6-55a5-429a-8683-07817b990ac9))
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "D2") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -4416,7 +4416,7 @@
   (symbol (lib_id "power:+5V") (at 88.9 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 21020a90-ac80-4135-a116-6c11bf07276b)
-    (property "Reference" "#PWR035" (at 88.9 146.05 0)
+    (property "Reference" "#PWR015" (at 88.9 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 88.9 138.1069 0)
@@ -4432,7 +4432,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -4441,7 +4441,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Socket") (at 169.545 176.53 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 214f800b-f555-4dbd-a827-e48010789d25)
-    (property "Reference" "J5" (at 168.91 169.3885 0)
+    (property "Reference" "J8" (at 168.91 169.3885 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MOTOR_R" (at 168.91 171.8127 0)
@@ -4461,7 +4461,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "J5") (unit 1)
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -4470,10 +4470,10 @@
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 259.08 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 22b9d0f2-4164-4189-88cb-a1fffefaa8d3)
-    (property "Reference" "JP4" (at 259.08 83.3835 0)
+    (property "Reference" "JP11" (at 259.08 82.55 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "PT_SEL1" (at 259.08 85.8077 0)
+    (property "Value" "PT_SEL1" (at 259.08 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" (at 259.08 88.9 0)
@@ -4488,7 +4488,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP4") (unit 1)
+          (reference "JP11") (unit 1)
         )
       )
     )
@@ -4497,7 +4497,7 @@
   (symbol (lib_id "power:GND") (at 22.86 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 273b464a-849d-4cd3-b6a7-0f90e38a5329)
-    (property "Reference" "#PWR01" (at 22.86 130.81 0)
+    (property "Reference" "#PWR02" (at 22.86 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 22.86 128.5931 0)
@@ -4513,7 +4513,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -4522,7 +4522,7 @@
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 210.82 25.4 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 29493842-1b46-4ca3-b48b-eecd3d6675b8)
-    (property "Reference" "JP14" (at 208.28 27.94 0)
+    (property "Reference" "JP7" (at 208.28 27.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Vs_SEL1" (at 208.28 30.48 0)
@@ -4540,7 +4540,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP14") (unit 1)
+          (reference "JP7") (unit 1)
         )
       )
     )
@@ -4549,7 +4549,7 @@
   (symbol (lib_id "power:+5V") (at 60.96 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 29c1ae67-96e5-4acf-9453-acea18fc010e)
-    (property "Reference" "#PWR039" (at 60.96 144.78 0)
+    (property "Reference" "#PWR010" (at 60.96 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 60.96 136.8369 0)
@@ -4565,7 +4565,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -4574,7 +4574,7 @@
   (symbol (lib_id "power:GND") (at 210.82 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2ad1e083-e782-4bfe-93bb-1533ba13a646)
-    (property "Reference" "#PWR043" (at 210.82 52.07 0)
+    (property "Reference" "#PWR038" (at 210.82 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 210.82 49.8531 0)
@@ -4590,7 +4590,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -4599,7 +4599,7 @@
   (symbol (lib_id "power:GND") (at 215.9 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2b401e65-5c39-4eec-9563-2f78ab0a962f)
-    (property "Reference" "#PWR018" (at 215.9 166.37 0)
+    (property "Reference" "#PWR040" (at 215.9 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 215.9 164.1531 0)
@@ -4615,7 +4615,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -4624,7 +4624,7 @@
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 259.08 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2f64489c-0714-40d3-bef5-9750cf401fbb)
-    (property "Reference" "JP6" (at 259.08 113.8635 0)
+    (property "Reference" "JP13" (at 259.08 113.8635 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "PT_SEL1" (at 259.08 116.2877 0)
@@ -4642,7 +4642,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP6") (unit 1)
+          (reference "JP13") (unit 1)
         )
       )
     )
@@ -4651,10 +4651,10 @@
   (symbol (lib_id "Connector:Conn_01x03_Pin") (at 220.98 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3abd6b92-10e6-44c4-a175-fbf85b0fdcce)
-    (property "Reference" "J12" (at 221.615 33.02 0)
+    (property "Reference" "J11" (at 221.615 33.02 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x03_Pin" (at 221.615 35.56 0)
+    (property "Value" "IO32_GPIO2" (at 221.615 35.56 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 220.98 40.64 0)
@@ -4669,7 +4669,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "J12") (unit 1)
+          (reference "J11") (unit 1)
         )
       )
     )
@@ -4678,10 +4678,10 @@
   (symbol (lib_id "Jumper:Jumper_2_Open") (at 60.96 154.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3c292381-bc17-48ae-b74b-3ac12ad6c4f1)
-    (property "Reference" "JP11" (at 62.103 153.7279 90)
+    (property "Reference" "JP4" (at 62.103 153.7279 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "L1_PU" (at 62.103 156.1521 90)
+    (property "Value" "R1_PU" (at 62.103 156.1521 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" (at 60.96 154.94 0)
@@ -4695,7 +4695,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP11") (unit 1)
+          (reference "JP4") (unit 1)
         )
       )
     )
@@ -4704,10 +4704,10 @@
   (symbol (lib_id "Device:R") (at 71.12 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3d45181b-6074-4930-b12d-27022c5ff2e8)
-    (property "Reference" "R24" (at 72.898 143.5679 0)
+    (property "Reference" "R20" (at 73.66 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1k" (at 72.898 145.9921 0)
+    (property "Value" "1k" (at 73.66 146.05 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 69.342 144.78 90)
@@ -4724,7 +4724,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R24") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -4733,7 +4733,7 @@
   (symbol (lib_id "power:+3.3V") (at 279.4 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 40ab932f-72a5-416b-9f87-3d58640de05d)
-    (property "Reference" "#PWR046" (at 279.4 24.13 0)
+    (property "Reference" "#PWR045" (at 279.4 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 279.4 16.1869 0)
@@ -4749,7 +4749,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -4758,7 +4758,7 @@
   (symbol (lib_id "power:+5V") (at 40.64 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 432cb39e-5651-44ae-96dd-211a69711640)
-    (property "Reference" "#PWR033" (at 40.64 144.78 0)
+    (property "Reference" "#PWR06" (at 40.64 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 40.64 136.8369 0)
@@ -4774,7 +4774,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -4783,7 +4783,7 @@
   (symbol (lib_id "power:+3.3V") (at 213.36 71.755 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 450e72d9-be61-44c3-a1f3-43e7f279ba43)
-    (property "Reference" "#PWR015" (at 213.36 75.565 0)
+    (property "Reference" "#PWR039" (at 213.36 75.565 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 213.36 67.6219 0)
@@ -4799,7 +4799,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -4808,7 +4808,7 @@
   (symbol (lib_id "power:+3.3V") (at 190.5 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 493efc22-b10e-4211-b114-cdd0e22f6ec4)
-    (property "Reference" "#PWR040" (at 190.5 24.13 0)
+    (property "Reference" "#PWR033" (at 190.5 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 190.5 16.1869 0)
@@ -4824,7 +4824,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -4833,7 +4833,7 @@
   (symbol (lib_id "Device:LED") (at 191.77 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 49d09e79-81bf-4868-aa9c-180dda574a85)
-    (property "Reference" "D3" (at 194.691 152.7754 90)
+    (property "Reference" "D4" (at 194.691 152.7754 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED_Y" (at 194.691 155.1996 90)
@@ -4853,7 +4853,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "D3") (unit 1)
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -4862,10 +4862,10 @@
   (symbol (lib_id "Connector:USB_B_Micro") (at 22.86 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4a3c73dd-3075-4d1b-a25a-3cc681a6d83c)
-    (property "Reference" "J4" (at 22.86 94.9157 0)
+    (property "Reference" "J4" (at 22.86 93.98 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "USB_B_Micro" (at 22.86 97.3399 0)
+    (property "Value" "USB_B_Micro" (at 22.86 96.52 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" (at 26.67 107.95 0)
@@ -4895,7 +4895,7 @@
   (symbol (lib_id "power:GND") (at 25.4 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4a70ea9e-e09d-4400-97c0-3c06001d209f)
-    (property "Reference" "#PWR04" (at 25.4 57.15 0)
+    (property "Reference" "#PWR03" (at 25.4 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 25.4 54.9331 0)
@@ -4911,7 +4911,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -4920,7 +4920,7 @@
   (symbol (lib_id "Device:R") (at 220.98 73.66 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4d23a513-22d2-4fc9-a31b-0457e264684a)
-    (property "Reference" "R6" (at 220.98 68.4997 90)
+    (property "Reference" "R21" (at 220.98 68.4997 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "50" (at 220.98 70.9239 90)
@@ -4940,7 +4940,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R6") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -4975,7 +4975,7 @@
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 238.76 25.4 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4f91c1c9-1a9d-4a8e-9549-44f59377d366)
-    (property "Reference" "JP15" (at 236.22 27.94 0)
+    (property "Reference" "JP8" (at 236.22 27.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Vs_SEL2" (at 236.22 30.48 0)
@@ -4993,7 +4993,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP15") (unit 1)
+          (reference "JP8") (unit 1)
         )
       )
     )
@@ -5002,10 +5002,10 @@
   (symbol (lib_id "Device:R") (at 40.64 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 50654c62-3c1d-4aa9-b906-2450bb46f6b0)
-    (property "Reference" "R21" (at 42.418 143.5679 0)
+    (property "Reference" "R17" (at 43.18 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1k" (at 42.418 145.9921 0)
+    (property "Value" "1k" (at 43.18 146.05 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 38.862 144.78 90)
@@ -5022,7 +5022,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R21") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -5031,7 +5031,7 @@
   (symbol (lib_id "power:GND") (at 191.77 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 527dd0ac-6f5c-4a77-a3d4-9ce73fcbbb58)
-    (property "Reference" "#PWR06" (at 191.77 166.37 0)
+    (property "Reference" "#PWR036" (at 191.77 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 191.77 164.1531 0)
@@ -5047,7 +5047,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
     )
@@ -5056,7 +5056,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 121.285 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 52a0dbce-900d-4cc8-ad69-e22225e40bce)
-    (property "Reference" "C5" (at 124.206 156.6489 0)
+    (property "Reference" "C9" (at 124.206 156.6489 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470u" (at 124.206 159.0731 0)
@@ -5076,7 +5076,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C5") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -5085,10 +5085,10 @@
   (symbol (lib_id "Device:C") (at 119.38 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 53676ec6-7227-46f8-ac88-4251d47421b6)
-    (property "Reference" "C10" (at 122.301 64.8279 0)
+    (property "Reference" "C7" (at 123.19 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10u" (at 122.301 67.2521 0)
+    (property "Value" "10u" (at 123.19 67.31 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 120.3452 69.85 0)
@@ -5105,7 +5105,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C10") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -5114,7 +5114,7 @@
   (symbol (lib_id "Sensor_Proximity:ITR8307-S17-TR8") (at 243.84 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 53cf8fe6-5931-4a14-bb56-66f2e00498a1)
-    (property "Reference" "U5" (at 243.84 108.8857 0)
+    (property "Reference" "U9" (at 243.84 108.8857 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "ITR8307-S17-TR8" (at 243.84 111.3099 0)
@@ -5136,7 +5136,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "U5") (unit 1)
+          (reference "U9") (unit 1)
         )
       )
     )
@@ -5145,10 +5145,10 @@
   (symbol (lib_id "Device:R") (at 188.595 73.025 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 586f80b5-7b9d-4c26-8636-b7b339f4ca9f)
-    (property "Reference" "R15" (at 190.373 71.8129 0)
+    (property "Reference" "R8" (at 190.5 71.755 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1k" (at 190.373 74.2371 0)
+    (property "Value" "1k" (at 190.5 74.295 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 186.817 73.025 90)
@@ -5165,7 +5165,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R15") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -5174,10 +5174,10 @@
   (symbol (lib_id "Device:R") (at 188.595 64.135 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5ba0dfbf-40fc-413a-b397-b11d0fae27ee)
-    (property "Reference" "R14" (at 190.373 62.9229 0)
+    (property "Reference" "R7" (at 190.5 62.865 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "560" (at 190.373 65.3471 0)
+    (property "Value" "560" (at 190.5 65.405 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 186.817 64.135 90)
@@ -5194,7 +5194,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R14") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -5203,7 +5203,7 @@
   (symbol (lib_id "Device:LED") (at 203.2 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5cae01e1-1632-474f-9034-b72caa257b21)
-    (property "Reference" "D4" (at 206.121 152.7754 90)
+    (property "Reference" "D5" (at 206.121 152.7754 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED_G" (at 206.121 155.1996 90)
@@ -5223,7 +5223,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "D4") (unit 1)
+          (reference "D5") (unit 1)
         )
       )
     )
@@ -5232,7 +5232,7 @@
   (symbol (lib_id "power:GND") (at 63.5 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5d639f67-6d44-4d38-b8e0-508f3e39b381)
-    (property "Reference" "#PWR09" (at 63.5 85.09 0)
+    (property "Reference" "#PWR012" (at 63.5 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.5 82.8731 0)
@@ -5248,7 +5248,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -5257,7 +5257,7 @@
   (symbol (lib_id "Device:C") (at 17.78 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5da04325-d15a-4c6c-9913-74ae9b34effd)
-    (property "Reference" "C11" (at 20.701 69.9079 0)
+    (property "Reference" "C1" (at 20.701 69.9079 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u(35V)" (at 20.701 72.3321 0)
@@ -5277,7 +5277,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C11") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -5286,7 +5286,7 @@
   (symbol (lib_id "power:+3.3V") (at 190.5 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6343ccb1-4f99-4041-bf52-06b021939ac8)
-    (property "Reference" "#PWR02" (at 190.5 100.33 0)
+    (property "Reference" "#PWR034" (at 190.5 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 190.5 92.3869 0)
@@ -5302,7 +5302,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
     )
@@ -5311,10 +5311,10 @@
   (symbol (lib_id "Device:R") (at 203.2 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6717a880-d616-454e-97f0-279c2bd40643)
-    (property "Reference" "R5" (at 204.978 139.7579 0)
+    (property "Reference" "R16" (at 205.74 139.7 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "560" (at 204.978 142.1821 0)
+    (property "Value" "560" (at 205.74 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 201.422 140.97 90)
@@ -5331,7 +5331,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R5") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -5366,7 +5366,7 @@
   (symbol (lib_id "Device:C") (at 132.08 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6b5a7236-1b93-4ee1-bb2f-3037356d4b07)
-    (property "Reference" "C7" (at 135.001 157.5379 0)
+    (property "Reference" "C10" (at 135.001 157.5379 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 135.001 159.9621 0)
@@ -5386,7 +5386,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C7") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -5395,7 +5395,7 @@
   (symbol (lib_id "power:+3.3V") (at 218.44 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6cb744d0-4ccd-44e1-9604-e132fbe19ea3)
-    (property "Reference" "#PWR042" (at 218.44 24.13 0)
+    (property "Reference" "#PWR041" (at 218.44 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 218.44 16.1869 0)
@@ -5411,7 +5411,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -5420,10 +5420,10 @@
   (symbol (lib_id "Jumper:Jumper_2_Open") (at 43.18 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6e38812c-95ac-4db3-9426-d17aff9dcaa5)
-    (property "Reference" "JP2" (at 43.18 37.3847 0)
+    (property "Reference" "JP1" (at 43.18 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Power_SW_DIisable" (at 43.18 39.8089 0)
+    (property "Value" "Power_SW_DIisable" (at 43.18 39.37 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" (at 43.18 43.18 0)
@@ -5440,7 +5440,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP2") (unit 1)
+          (reference "JP1") (unit 1)
         )
       )
     )
@@ -5449,7 +5449,7 @@
   (symbol (lib_id "power:GND") (at 17.78 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7260ec11-c7ef-4f5b-ab97-2a239b2b6c6e)
-    (property "Reference" "#PWR027" (at 17.78 85.09 0)
+    (property "Reference" "#PWR01" (at 17.78 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 17.78 82.8731 0)
@@ -5465,7 +5465,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -5474,7 +5474,7 @@
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 228.6 114.3 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 737312a5-d5e7-4409-b2ba-9892992dd0a0)
-    (property "Reference" "JP5" (at 226.06 111.76 0)
+    (property "Reference" "JP12" (at 226.06 111.76 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LED_SEL1" (at 226.06 109.22 0)
@@ -5492,7 +5492,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP5") (unit 1)
+          (reference "JP12") (unit 1)
         )
       )
     )
@@ -5501,10 +5501,10 @@
   (symbol (lib_id "Connector:Conn_01x04_Pin") (at 22.86 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7485aef6-54c9-44aa-9e78-498da6540b07)
-    (property "Reference" "J7" (at 23.495 158.3395 0)
+    (property "Reference" "J5" (at 23.495 157.48 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x04_Pin" (at 23.495 160.7637 0)
+    (property "Value" "Encorder_L" (at 23.495 160.02 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "YY_Common:JST_ZH_B4B-ZH-A_1x04_P1.50mm_Vertical" (at 22.86 165.1 0)
@@ -5513,14 +5513,14 @@
     (property "Datasheet" "~" (at 22.86 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 80ce9406-4096-466e-bf04-0350d3f0d7ab))
-    (pin "2" (uuid 6bff2e6b-6b5b-4911-b36a-b22ddb070ff3))
-    (pin "3" (uuid 9ab0f414-fc2c-46b8-9947-1a038efafc17))
-    (pin "4" (uuid aa6873d0-b66f-4ca8-8698-b9f011fc0b88))
+    (pin "1" (uuid c6080b69-a3c2-49cf-a711-f19a548b5bf7))
+    (pin "2" (uuid 7e91747e-eb15-49d4-97b2-98734a24c959))
+    (pin "3" (uuid 14cd70b6-76b3-4074-b212-e8288111c7f0))
+    (pin "4" (uuid 6602e6fd-1600-465d-8b00-6dc0f1405c88))
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "J7") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -5529,10 +5529,10 @@
   (symbol (lib_id "Connector:Conn_01x03_Pin") (at 248.92 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 797d38d1-f85f-49bd-816b-26cf78ea17ce)
-    (property "Reference" "J13" (at 249.555 33.02 0)
+    (property "Reference" "J12" (at 249.555 33.02 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x03_Pin" (at 249.555 35.56 0)
+    (property "Value" "IO5_GPIO3(PU)" (at 249.555 35.56 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 248.92 40.64 0)
@@ -5547,7 +5547,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "J13") (unit 1)
+          (reference "J12") (unit 1)
         )
       )
     )
@@ -5556,7 +5556,7 @@
   (symbol (lib_id "Regulator_Linear:AP1117-33") (at 78.74 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7cc821c9-7c4d-4078-a2a5-69cf4104379c)
-    (property "Reference" "U2" (at 78.74 57.4507 0)
+    (property "Reference" "U3" (at 78.74 57.4507 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "UZ1085L-33-TN3-R" (at 78.74 59.8749 0)
@@ -5577,7 +5577,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "U2") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -5586,7 +5586,7 @@
   (symbol (lib_id "Jumper:Jumper_2_Open") (at 40.64 154.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7ccb7725-e087-42c8-9766-ef0dfe0f97db)
-    (property "Reference" "JP9" (at 41.783 153.7279 90)
+    (property "Reference" "JP2" (at 41.783 153.7279 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "L1_PU" (at 41.783 156.1521 90)
@@ -5603,19 +5603,19 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP9") (unit 1)
+          (reference "JP2") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 48.26 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 7d019e83-a209-44de-babc-a1578721ef6b)
-    (property "Reference" "C1" (at 51.181 95.3079 0)
+    (property "Reference" "C5" (at 50.8 93.98 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 51.181 97.7321 0)
+    (property "Value" "0.1u" (at 50.8 96.52 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 49.2252 100.33 0)
@@ -5632,7 +5632,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C1") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -5641,7 +5641,7 @@
   (symbol (lib_id "power:+5V") (at 33.02 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e909b9f-4c12-4d1d-a424-86c39977fe11)
-    (property "Reference" "#PWR031" (at 33.02 144.78 0)
+    (property "Reference" "#PWR04" (at 33.02 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 33.02 136.8369 0)
@@ -5657,7 +5657,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -5666,7 +5666,7 @@
   (symbol (lib_id "power:+5V") (at 71.12 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e97094e-5d97-440e-bd2a-e8ad94eebe9e)
-    (property "Reference" "#PWR041" (at 71.12 144.78 0)
+    (property "Reference" "#PWR014" (at 71.12 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 71.12 136.8369 0)
@@ -5682,19 +5682,19 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:R") (at 271.78 127 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 7fba85e3-d86a-4bea-8309-6651b55252ae)
-    (property "Reference" "R10" (at 271.78 121.8397 90)
+    (property "Reference" "R24" (at 271.78 121.92 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1k" (at 271.78 124.2639 90)
+    (property "Value" "1k" (at 271.78 124.46 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 271.78 128.778 90)
@@ -5711,7 +5711,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R10") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
     )
@@ -5720,10 +5720,10 @@
   (symbol (lib_id "Connector:Conn_01x04_Pin") (at 22.86 182.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 81ae3f04-d82a-4825-a24c-64d2af919a7e)
-    (property "Reference" "J8" (at 23.495 176.1195 0)
+    (property "Reference" "J6" (at 23.495 175.26 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x04_Pin" (at 23.495 178.5437 0)
+    (property "Value" "Encorder_R" (at 23.495 177.8 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "YY_Common:JST_ZH_B4B-ZH-A_1x04_P1.50mm_Vertical" (at 22.86 182.88 0)
@@ -5732,14 +5732,14 @@
     (property "Datasheet" "~" (at 22.86 182.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a802b418-1e60-498c-aa73-2a2310d6a0d4))
-    (pin "2" (uuid fe29371c-96bc-4911-8d51-36659f286af4))
-    (pin "3" (uuid 9f7e4ce0-cec0-4394-959b-fdc9e6236c4e))
-    (pin "4" (uuid d87cf246-aadf-4dcf-a2ef-e99a7a128413))
+    (pin "1" (uuid c96676eb-e191-452c-9562-248da51d2bba))
+    (pin "2" (uuid 4e96ff7b-3002-4af8-abfb-9e2185602a7d))
+    (pin "3" (uuid 43785e7b-97ca-4f6f-b69f-e5b7cf77dfec))
+    (pin "4" (uuid c62478bb-459f-4b0c-8dab-057a072e0928))
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "J8") (unit 1)
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -5748,7 +5748,7 @@
   (symbol (lib_id "power:+3.3V") (at 93.98 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 828bd67f-83fc-4b33-bc87-a0c76279849b)
-    (property "Reference" "#PWR036" (at 93.98 146.05 0)
+    (property "Reference" "#PWR019" (at 93.98 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 93.98 138.1069 0)
@@ -5764,7 +5764,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -5773,7 +5773,7 @@
   (symbol (lib_id "power:+3.3V") (at 93.98 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 847dc00c-c0d6-4550-8616-5875a43cfc1a)
-    (property "Reference" "#PWR011" (at 93.98 64.77 0)
+    (property "Reference" "#PWR018" (at 93.98 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 93.98 56.8269 0)
@@ -5789,7 +5789,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -5798,7 +5798,7 @@
   (symbol (lib_id "power:GND") (at 117.475 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 857117fb-a4db-4cf0-b531-e7e2f4e4b73d)
-    (property "Reference" "#PWR016" (at 117.475 171.45 0)
+    (property "Reference" "#PWR024" (at 117.475 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 117.475 169.2331 0)
@@ -5814,7 +5814,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -5823,7 +5823,7 @@
   (symbol (lib_id "power:GND") (at 91.44 190.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 88579081-4fa0-409d-8782-1e4fb09df86b)
-    (property "Reference" "#PWR037" (at 91.44 196.85 0)
+    (property "Reference" "#PWR016" (at 91.44 196.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 91.44 194.6331 0)
@@ -5839,7 +5839,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -5848,7 +5848,7 @@
   (symbol (lib_id "power:GND") (at 132.08 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 890bef63-f49a-4fc5-bc3a-1b3a5e8cc124)
-    (property "Reference" "#PWR014" (at 132.08 57.15 0)
+    (property "Reference" "#PWR027" (at 132.08 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.08 54.9331 0)
@@ -5864,19 +5864,19 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:R") (at 271.78 96.52 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 8955e313-1a25-4d7f-89b6-cf78deed0f00)
-    (property "Reference" "R9" (at 271.78 91.3597 90)
+    (property "Reference" "R22" (at 271.78 91.44 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1k" (at 271.78 93.7839 90)
+    (property "Value" "1k" (at 271.78 93.98 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 271.78 98.298 90)
@@ -5893,7 +5893,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R9") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -5902,7 +5902,7 @@
   (symbol (lib_id "Device:R") (at 106.68 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 89b824d1-4f61-4ac7-8cc2-723d8bbc9bf7)
-    (property "Reference" "R17" (at 108.458 123.2479 0)
+    (property "Reference" "R11" (at 108.458 123.2479 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 108.458 125.6721 0)
@@ -5922,7 +5922,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R17") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -5931,7 +5931,7 @@
   (symbol (lib_id "power:GND") (at 48.26 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8c40898c-3bcf-46c8-b50d-1f87141de32a)
-    (property "Reference" "#PWR07" (at 48.26 106.68 0)
+    (property "Reference" "#PWR08" (at 48.26 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 48.26 104.4631 0)
@@ -5947,7 +5947,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -5956,10 +5956,10 @@
   (symbol (lib_id "Connector:Conn_01x03_Pin") (at 165.1 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8e9ec01f-d08f-43d7-89cd-a79d29798a47)
-    (property "Reference" "J10" (at 165.735 33.02 0)
+    (property "Reference" "J9" (at 165.735 33.02 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x03_Pin" (at 165.735 35.56 0)
+    (property "Value" "IO4_GPIO0" (at 165.735 35.56 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 165.1 40.64 0)
@@ -5974,7 +5974,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "J10") (unit 1)
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -5983,7 +5983,7 @@
   (symbol (lib_id "power:GND") (at 281.94 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8f191db9-9900-4337-9b07-43fce955cb2f)
-    (property "Reference" "#PWR020" (at 281.94 166.37 0)
+    (property "Reference" "#PWR047" (at 281.94 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 281.94 164.1531 0)
@@ -5999,7 +5999,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
     )
@@ -6008,10 +6008,10 @@
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 259.08 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8fba9e73-08c1-4a2e-a7c2-49073e12d166)
-    (property "Reference" "JP8" (at 259.08 144.3435 0)
+    (property "Reference" "JP15" (at 259.08 143.51 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "PT_SEL1" (at 259.08 146.7677 0)
+    (property "Value" "PT_SEL1" (at 259.08 146.05 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" (at 259.08 149.86 0)
@@ -6026,7 +6026,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP8") (unit 1)
+          (reference "JP15") (unit 1)
         )
       )
     )
@@ -6035,7 +6035,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Socket") (at 78.74 22.86 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 90797621-e40a-4c0f-8260-8f805faf3265)
-    (property "Reference" "J9" (at 78.74 15.24 0)
+    (property "Reference" "J3" (at 78.74 15.24 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Vin_XT" (at 78.74 17.78 0)
@@ -6055,7 +6055,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "J9") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -6064,10 +6064,10 @@
   (symbol (lib_id "Device:C") (at 132.08 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 90d8b4e5-336a-4dd3-81bf-fdb6cbcb8218)
-    (property "Reference" "C4" (at 135.001 44.5079 0)
+    (property "Reference" "C6" (at 135.89 44.45 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 135.001 46.9321 0)
+    (property "Value" "0.1u" (at 135.89 46.99 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 133.0452 49.53 0)
@@ -6084,7 +6084,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C4") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -6093,7 +6093,7 @@
   (symbol (lib_id "Device:R") (at 106.68 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 911c5c26-2739-4393-933f-055e98e027e3)
-    (property "Reference" "R19" (at 108.458 100.3879 0)
+    (property "Reference" "R10" (at 108.458 100.3879 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 108.458 102.8121 0)
@@ -6113,7 +6113,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R19") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -6122,10 +6122,10 @@
   (symbol (lib_id "Connector:Conn_01x02_Socket") (at 170.815 151.13 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 92cde624-8360-4528-b2bb-30a2644c3009)
-    (property "Reference" "J6" (at 168.275 143.51 0)
+    (property "Reference" "J7" (at 168.275 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Motor_L" (at 168.275 146.05 0)
+    (property "Value" "MOTOR_L" (at 168.275 146.05 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" (at 170.815 151.13 0)
@@ -6142,7 +6142,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "J6") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -6151,7 +6151,7 @@
   (symbol (lib_id "power:+3.3V") (at 114.3 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 957302f4-d8ab-4235-b56c-89ea9c8a27c6)
-    (property "Reference" "#PWR026" (at 114.3 97.79 0)
+    (property "Reference" "#PWR022" (at 114.3 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 114.3 89.8469 0)
@@ -6167,7 +6167,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -6176,7 +6176,7 @@
   (symbol (lib_id "Sensor_Proximity:ITR8307-S17-TR8") (at 243.84 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 95e4c435-83f7-43a6-be80-65d991dec3b5)
-    (property "Reference" "U6" (at 243.84 139.3657 0)
+    (property "Reference" "U10" (at 243.84 139.3657 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "ITR8307-S17-TR8" (at 243.84 141.7899 0)
@@ -6198,7 +6198,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "U6") (unit 1)
+          (reference "U10") (unit 1)
         )
       )
     )
@@ -6207,7 +6207,7 @@
   (symbol (lib_id "power:GND") (at 147.32 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9ed746c6-6b83-4618-894e-0912251b4c9e)
-    (property "Reference" "#PWR013" (at 147.32 135.89 0)
+    (property "Reference" "#PWR029" (at 147.32 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 133.6731 0)
@@ -6223,7 +6223,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -6232,7 +6232,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Socket") (at 17.78 43.18 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9f810e95-9d29-4c7b-86ae-f68573ce4407)
-    (property "Reference" "J3" (at 18.415 38.5785 0)
+    (property "Reference" "J2" (at 18.415 38.5785 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Power_SW" (at 18.415 41.0027 0)
@@ -6252,7 +6252,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "J3") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -6261,7 +6261,7 @@
   (symbol (lib_id "power:GND") (at 119.38 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a19f024a-7f51-48c4-a990-a4d08ace4ce9)
-    (property "Reference" "#PWR022" (at 119.38 77.47 0)
+    (property "Reference" "#PWR026" (at 119.38 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.38 75.2531 0)
@@ -6277,7 +6277,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -6286,7 +6286,7 @@
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 228.6 144.78 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a25c61f2-b11b-4dca-91bb-881900542336)
-    (property "Reference" "JP7" (at 226.06 142.24 0)
+    (property "Reference" "JP14" (at 226.06 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LED_SEL1" (at 226.06 139.7 0)
@@ -6304,7 +6304,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP7") (unit 1)
+          (reference "JP14") (unit 1)
         )
       )
     )
@@ -6313,7 +6313,7 @@
   (symbol (lib_id "power:GND") (at 117.475 190.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a3fdff51-fc42-4087-8fdd-2905abc7a9c5)
-    (property "Reference" "#PWR017" (at 117.475 196.85 0)
+    (property "Reference" "#PWR025" (at 117.475 196.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 117.475 194.6331 0)
@@ -6329,7 +6329,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -6338,7 +6338,7 @@
   (symbol (lib_id "RF_Module:ESP32-WROOM-32") (at 147.32 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a40212d2-8b80-49b4-858f-90a5087ed87f)
-    (property "Reference" "U3" (at 149.5141 54.2757 0)
+    (property "Reference" "U7" (at 149.5141 54.2757 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ESP32-WROOM-32" (at 149.5141 56.6999 0)
@@ -6395,7 +6395,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "U3") (unit 1)
+          (reference "U7") (unit 1)
         )
       )
     )
@@ -6404,7 +6404,7 @@
   (symbol (lib_id "YY_LCSC:CP2119LDTR") (at 144.78 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a657e7bb-2a4a-44b1-95c9-68e2e715aac1)
-    (property "Reference" "U7" (at 144.78 140.7627 0)
+    (property "Reference" "U5" (at 144.78 140.7627 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "CP3119MDTR" (at 144.78 143.1869 0)
@@ -6430,7 +6430,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "U7") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -6439,10 +6439,10 @@
   (symbol (lib_id "Device:R") (at 190.5 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a7f17fee-ca2a-4488-a428-37f6041ba82e)
-    (property "Reference" "R2" (at 192.278 102.9279 0)
+    (property "Reference" "R9" (at 193.04 102.87 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "560" (at 192.278 105.3521 0)
+    (property "Value" "560" (at 193.04 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 188.722 104.14 90)
@@ -6459,7 +6459,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R2") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -6468,10 +6468,10 @@
   (symbol (lib_id "Jumper:Jumper_2_Open") (at 71.12 154.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a822e464-37e0-4866-997c-634a7a2cd18d)
-    (property "Reference" "JP12" (at 72.263 153.7279 90)
+    (property "Reference" "JP5" (at 72.263 153.7279 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "L2_PU" (at 72.263 156.1521 90)
+    (property "Value" "R2_PU" (at 72.263 156.1521 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" (at 71.12 154.94 0)
@@ -6485,7 +6485,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP12") (unit 1)
+          (reference "JP5") (unit 1)
         )
       )
     )
@@ -6494,7 +6494,7 @@
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 182.88 25.4 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a93eb4a8-8384-4a5c-8a41-f9cccc45139c)
-    (property "Reference" "JP13" (at 180.34 27.94 0)
+    (property "Reference" "JP6" (at 180.34 27.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Vs_SEL0" (at 180.34 30.48 0)
@@ -6512,7 +6512,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP13") (unit 1)
+          (reference "JP6") (unit 1)
         )
       )
     )
@@ -6521,7 +6521,7 @@
   (symbol (lib_id "power:+3.3V") (at 279.5404 71.755 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid adcf166e-1851-4278-9758-6cd3c5c21da2)
-    (property "Reference" "#PWR019" (at 279.5404 75.565 0)
+    (property "Reference" "#PWR046" (at 279.5404 75.565 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 279.5404 67.6219 0)
@@ -6537,7 +6537,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -6546,10 +6546,10 @@
   (symbol (lib_id "Device:C") (at 132.08 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b0beeb2b-e80a-4801-b01e-af0e444241fa)
-    (property "Reference" "C8" (at 135.001 182.9379 0)
+    (property "Reference" "C12" (at 135.89 182.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 135.001 185.3621 0)
+    (property "Value" "0.1u" (at 135.89 185.42 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 133.0452 187.96 0)
@@ -6566,7 +6566,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C8") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -6575,10 +6575,10 @@
   (symbol (lib_id "Device:R") (at 119.38 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b49c54e0-9c28-4e6a-9894-f40e63b2afc1)
-    (property "Reference" "R16" (at 121.158 47.0479 0)
+    (property "Reference" "R6" (at 121.92 46.99 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1k" (at 121.158 49.4721 0)
+    (property "Value" "1k" (at 121.92 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 117.602 48.26 90)
@@ -6595,7 +6595,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R16") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -6604,7 +6604,7 @@
   (symbol (lib_id "power:+3.3V") (at 106.68 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b77ac4c2-bce9-4173-a0d2-8d4cc57eae89)
-    (property "Reference" "#PWR025" (at 106.68 97.79 0)
+    (property "Reference" "#PWR020" (at 106.68 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 106.68 89.8469 0)
@@ -6620,7 +6620,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -6629,10 +6629,10 @@
   (symbol (lib_id "Device:C_Polarized") (at 93.98 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ba7a7588-d95c-4deb-86ca-97e92657e89e)
-    (property "Reference" "C3" (at 96.901 69.0189 0)
+    (property "Reference" "C4" (at 97.79 68.961 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "22u" (at 96.901 71.4431 0)
+    (property "Value" "22u" (at 97.79 71.501 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4" (at 94.9452 74.93 0)
@@ -6649,7 +6649,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C3") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -6658,7 +6658,7 @@
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 228.6 83.82 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ba8d2be4-6f6a-4543-98a1-05dd2eeeeb1f)
-    (property "Reference" "JP3" (at 226.06 81.28 0)
+    (property "Reference" "JP10" (at 226.06 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LED_SEL1" (at 226.06 78.74 0)
@@ -6676,7 +6676,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP3") (unit 1)
+          (reference "JP10") (unit 1)
         )
       )
     )
@@ -6685,7 +6685,7 @@
   (symbol (lib_id "Interface_USB:CH340X") (at 63.5 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bdde081b-d1ef-4a8c-b113-d3db55325da5)
-    (property "Reference" "U1" (at 65.6941 123.6401 0)
+    (property "Reference" "U2" (at 65.6941 123.6401 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "CH340X" (at 65.6941 126.0643 0)
@@ -6713,7 +6713,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "U1") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -6722,7 +6722,7 @@
   (symbol (lib_id "power:+5V") (at 63.5 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid be8dff9f-d6ca-4b02-bf3a-ec2d6cfaad10)
-    (property "Reference" "#PWR029" (at 63.5 64.77 0)
+    (property "Reference" "#PWR011" (at 63.5 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 63.5 56.8269 0)
@@ -6738,7 +6738,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -6747,10 +6747,10 @@
   (symbol (lib_id "Device:C_Polarized") (at 63.5 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bf1db27a-1a05-49dc-83b3-a835b5079ab4)
-    (property "Reference" "C2" (at 66.421 69.0189 0)
+    (property "Reference" "C3" (at 67.31 68.961 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "22u" (at 66.421 71.4431 0)
+    (property "Value" "22u" (at 67.31 71.501 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4" (at 64.4652 74.93 0)
@@ -6767,7 +6767,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C2") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -6776,7 +6776,7 @@
   (symbol (lib_id "Logic_LevelTranslator:TXB0104RUT") (at 91.44 172.72 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c34f61fe-837e-44ab-a89c-8b21ab92cad2)
-    (property "Reference" "U10" (at 89.4841 190.5 0)
+    (property "Reference" "U4" (at 89.4841 190.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TXB0104RUT" (at 89.4841 193.04 0)
@@ -6803,7 +6803,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "U10") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -6812,10 +6812,10 @@
   (symbol (lib_id "Device:R") (at 81.28 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c64e848f-f710-445c-af57-92efea84baba)
-    (property "Reference" "R1" (at 83.058 123.2479 0)
+    (property "Reference" "R5" (at 83.82 123.19 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.7k" (at 83.058 125.6721 0)
+    (property "Value" "4.7k" (at 83.82 125.73 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 79.502 124.46 90)
@@ -6832,7 +6832,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R1") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -6841,7 +6841,7 @@
   (symbol (lib_id "Jumper:Jumper_2_Open") (at 50.8 154.94 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c8209976-d072-4d13-8523-d16fea7c5983)
-    (property "Reference" "JP10" (at 51.943 153.7279 90)
+    (property "Reference" "JP3" (at 51.943 153.7279 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "L2_PU" (at 51.943 156.1521 90)
@@ -6858,19 +6858,19 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP10") (unit 1)
+          (reference "JP3") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:R") (at 220.98 104.14 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid c8ddab74-9cef-4746-be2f-ecf2ecbd7a21)
-    (property "Reference" "R7" (at 220.98 98.9797 90)
+    (property "Reference" "R23" (at 220.98 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "50" (at 220.98 101.4039 90)
+    (property "Value" "50" (at 220.98 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 220.98 102.362 90)
@@ -6887,7 +6887,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R7") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -6896,7 +6896,7 @@
   (symbol (lib_id "Jumper:Jumper_3_Open") (at 271.78 25.4 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cc6291d0-0dd0-447b-8a0b-b95a180b7b8c)
-    (property "Reference" "JP16" (at 269.24 27.94 0)
+    (property "Reference" "JP9" (at 269.24 27.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Vs_SEL3" (at 269.24 30.48 0)
@@ -6914,7 +6914,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "JP16") (unit 1)
+          (reference "JP9") (unit 1)
         )
       )
     )
@@ -6923,7 +6923,7 @@
   (symbol (lib_id "Device:R") (at 114.3 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc90ffeb-2a41-4e55-a5c2-372db73d356d)
-    (property "Reference" "R18" (at 116.078 123.2479 0)
+    (property "Reference" "R13" (at 116.078 123.2479 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 116.078 125.6721 0)
@@ -6943,7 +6943,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R18") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -6952,10 +6952,10 @@
   (symbol (lib_id "Device:LED") (at 190.5 115.57 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cf3af6d5-f0b2-42d2-9e0c-db9e98bacbb5)
-    (property "Reference" "D1" (at 193.421 115.9454 90)
+    (property "Reference" "D2" (at 194.31 115.8875 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "LED_POWER" (at 193.421 118.3696 90)
+    (property "Value" "LED_POWER" (at 194.31 118.4275 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "LED_THT:LED_D3.0mm" (at 190.5 115.57 0)
@@ -6972,7 +6972,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "D1") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -6981,7 +6981,7 @@
   (symbol (lib_id "power:+5V") (at 48.26 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d0180195-ab47-42d0-8007-bb7d0ee18a82)
-    (property "Reference" "#PWR028" (at 48.26 64.77 0)
+    (property "Reference" "#PWR07" (at 48.26 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 48.26 56.8269 0)
@@ -6997,7 +6997,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -7006,7 +7006,7 @@
   (symbol (lib_id "power:GND") (at 271.78 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d466052e-d3f5-4477-87bf-e5a296186010)
-    (property "Reference" "#PWR047" (at 271.78 52.07 0)
+    (property "Reference" "#PWR044" (at 271.78 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 271.78 49.8531 0)
@@ -7022,7 +7022,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -7031,10 +7031,10 @@
   (symbol (lib_id "YY_LCSC:CP2119LDTR") (at 144.78 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d562bf5f-0caa-45a0-ad1b-18cb0ad5efc1)
-    (property "Reference" "U8" (at 144.78 166.1627 0)
+    (property "Reference" "U6" (at 144.78 166.1627 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "CP2119LDTR" (at 144.78 168.5869 0)
+    (property "Value" "CP3119MDTR" (at 144.78 168.5869 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" (at 144.78 186.69 0)
@@ -7057,7 +7057,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "U8") (unit 1)
+          (reference "U6") (unit 1)
         )
       )
     )
@@ -7121,10 +7121,10 @@
   (symbol (lib_id "Device:R") (at 60.96 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid df3af96f-f6df-4d8a-b2ae-19ebb330aff9)
-    (property "Reference" "R23" (at 62.738 143.5679 0)
+    (property "Reference" "R19" (at 63.5 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1k" (at 62.738 145.9921 0)
+    (property "Value" "1k" (at 63.5 146.05 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 59.182 144.78 90)
@@ -7141,7 +7141,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R23") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -7150,7 +7150,7 @@
   (symbol (lib_id "Sensor_Proximity:ITR8307-S17-TR8") (at 243.84 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e0e7fd14-c4be-4f4b-aa46-f0feefe97472)
-    (property "Reference" "U4" (at 243.84 78.4057 0)
+    (property "Reference" "U8" (at 243.84 78.4057 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "ITR8307-S17-TR8" (at 243.84 80.8299 0)
@@ -7172,7 +7172,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "U4") (unit 1)
+          (reference "U8") (unit 1)
         )
       )
     )
@@ -7181,7 +7181,7 @@
   (symbol (lib_id "Regulator_Linear:AP1117-33") (at 33.02 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e1185ae5-e25c-4c5f-a1fe-c3cec0801b21)
-    (property "Reference" "U9" (at 33.02 57.4507 0)
+    (property "Reference" "U1" (at 33.02 57.4507 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SE8650K2B-HF\n" (at 33.02 59.8749 0)
@@ -7202,7 +7202,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "U9") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -7211,10 +7211,10 @@
   (symbol (lib_id "Device:R") (at 191.77 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e22c20ef-c97a-4550-bc45-83a2ba971997)
-    (property "Reference" "R4" (at 193.548 139.7579 0)
+    (property "Reference" "R15" (at 194.31 139.7 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "560" (at 193.548 142.1821 0)
+    (property "Value" "560" (at 194.31 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 189.992 140.97 90)
@@ -7231,7 +7231,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R4") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -7240,7 +7240,7 @@
   (symbol (lib_id "Device:R") (at 271.78 157.48 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e245ac7f-e143-49f0-aacd-e38805f00b47)
-    (property "Reference" "R11" (at 271.78 152.3197 90)
+    (property "Reference" "R26" (at 271.78 152.3197 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 271.78 154.7439 90)
@@ -7260,7 +7260,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R11") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
     )
@@ -7269,7 +7269,7 @@
   (symbol (lib_id "power:GND") (at 114.3 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e2d08c87-90d5-408d-800d-b66153251323)
-    (property "Reference" "#PWR024" (at 114.3 140.97 0)
+    (property "Reference" "#PWR023" (at 114.3 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 114.3 138.7531 0)
@@ -7285,7 +7285,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -7294,10 +7294,10 @@
   (symbol (lib_id "Device:R") (at 55.88 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e75710b2-eb90-411d-a25b-66defa375653)
-    (property "Reference" "R27" (at 57.658 39.4279 0)
+    (property "Reference" "R2" (at 58.42 39.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "2k" (at 57.658 41.8521 0)
+    (property "Value" "2k" (at 58.42 41.91 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 54.102 40.64 90)
@@ -7314,7 +7314,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R27") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -7323,7 +7323,7 @@
   (symbol (lib_id "power:GND") (at 203.2 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e85fec65-0606-4ccc-8ca9-1e8a43d925b9)
-    (property "Reference" "#PWR08" (at 203.2 166.37 0)
+    (property "Reference" "#PWR037" (at 203.2 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 203.2 164.1531 0)
@@ -7339,7 +7339,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -7348,7 +7348,7 @@
   (symbol (lib_id "Device:D") (at 88.9 40.64 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e9e657ca-58e4-4327-be71-a288ec0e7eec)
-    (property "Reference" "D5" (at 91.44 39.37 90)
+    (property "Reference" "D1" (at 91.44 39.37 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "CDBA240LL-HF" (at 91.44 41.91 90)
@@ -7374,7 +7374,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "D5") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -7383,7 +7383,7 @@
   (symbol (lib_id "Device:R") (at 114.3 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ea11bc9a-62a6-4680-8bd5-e19616a5f14a)
-    (property "Reference" "R20" (at 116.078 100.3879 0)
+    (property "Reference" "R12" (at 116.078 100.3879 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 116.078 102.8121 0)
@@ -7403,7 +7403,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R20") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -7412,7 +7412,7 @@
   (symbol (lib_id "power:GND") (at 188.595 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eab7cd12-e6c5-45be-90be-e03ae8298ca0)
-    (property "Reference" "#PWR021" (at 188.595 85.09 0)
+    (property "Reference" "#PWR032" (at 188.595 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 188.595 82.8731 0)
@@ -7428,7 +7428,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -7437,7 +7437,7 @@
   (symbol (lib_id "power:GND") (at 182.88 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ec2d0971-5665-4e63-865c-d3e4dedb37d8)
-    (property "Reference" "#PWR038" (at 182.88 52.07 0)
+    (property "Reference" "#PWR031" (at 182.88 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 182.88 49.8531 0)
@@ -7453,7 +7453,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -7462,7 +7462,7 @@
   (symbol (lib_id "power:+5V") (at 93.98 50.8 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ef6b1709-2f3c-4ad6-888a-8f6324d64364)
-    (property "Reference" "#PWR030" (at 90.17 50.8 0)
+    (property "Reference" "#PWR017" (at 90.17 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 98.1131 50.8 0)
@@ -7478,7 +7478,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -7487,7 +7487,7 @@
   (symbol (lib_id "Device:C") (at 197.485 64.135 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f33db05c-28c9-4ce0-9bb8-88f5b0f97b25)
-    (property "Reference" "C9" (at 200.406 65.4629 0)
+    (property "Reference" "C8" (at 200.406 65.4629 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "20p" (at 200.406 67.8871 0)
@@ -7507,7 +7507,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "C9") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -7543,12 +7543,12 @@
   )
 
   (symbol (lib_id "Device:R") (at 220.98 134.62 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid f6509217-8483-43bf-903e-de2a3bd43784)
-    (property "Reference" "R8" (at 220.98 129.4597 90)
+    (property "Reference" "R25" (at 220.98 129.54 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "50" (at 220.98 131.8839 90)
+    (property "Value" "50" (at 220.98 132.08 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 220.98 132.842 90)
@@ -7565,7 +7565,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R8") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
     )
@@ -7574,10 +7574,10 @@
   (symbol (lib_id "Device:R") (at 40.64 106.68 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f70c0c0a-b388-4631-afc6-ae5f8ffb805c)
-    (property "Reference" "R12" (at 40.64 101.5197 90)
+    (property "Reference" "R3" (at 40.64 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "22" (at 40.64 103.9439 90)
+    (property "Value" "22" (at 40.64 102.87 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 40.64 108.458 90)
@@ -7594,7 +7594,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R12") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -7603,7 +7603,7 @@
   (symbol (lib_id "power:+3.3V") (at 147.32 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f717b770-e68a-4d86-85aa-c2793095b6c6)
-    (property "Reference" "#PWR012" (at 147.32 39.37 0)
+    (property "Reference" "#PWR028" (at 147.32 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 147.32 31.4269 0)
@@ -7619,7 +7619,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -7628,10 +7628,10 @@
   (symbol (lib_id "Device:R") (at 179.07 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fb51db58-b9f2-4f4f-a205-bff82d865773)
-    (property "Reference" "R3" (at 180.848 139.7579 0)
+    (property "Reference" "R14" (at 181.61 139.7 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "560" (at 180.848 142.1821 0)
+    (property "Value" "560" (at 181.61 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 177.292 140.97 90)
@@ -7648,7 +7648,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "R3") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -7657,7 +7657,7 @@
   (symbol (lib_id "power:GND") (at 35.56 190.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fd7f2329-d2f9-4444-87e9-280255362490)
-    (property "Reference" "#PWR032" (at 35.56 196.85 0)
+    (property "Reference" "#PWR05" (at 35.56 196.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 35.56 194.6331 0)
@@ -7673,7 +7673,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -7682,7 +7682,7 @@
   (symbol (lib_id "power:+5V") (at 50.8 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fdb49715-aa30-4528-922e-9783e24fad9e)
-    (property "Reference" "#PWR034" (at 50.8 144.78 0)
+    (property "Reference" "#PWR09" (at 50.8 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 50.8 136.8369 0)
@@ -7698,7 +7698,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -7707,10 +7707,10 @@
   (symbol (lib_id "Connector:Conn_01x03_Pin") (at 193.04 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fdb78f81-9ba3-4e3f-9d77-fa58ee4ed09c)
-    (property "Reference" "J11" (at 193.675 33.02 0)
+    (property "Reference" "J10" (at 193.675 33.02 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x03_Pin" (at 193.675 35.56 0)
+    (property "Value" "IO27_GPIO1" (at 193.675 35.56 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 193.04 40.64 0)
@@ -7725,7 +7725,7 @@
     (instances
       (project "Moving_V4_ESP"
         (path "/515135d2-db88-48ff-b508-cbebeed2b019"
-          (reference "J11") (unit 1)
+          (reference "J10") (unit 1)
         )
       )
     )
