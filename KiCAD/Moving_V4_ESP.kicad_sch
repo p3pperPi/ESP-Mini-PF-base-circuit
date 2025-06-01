@@ -6615,7 +6615,7 @@
     (property "Value" "ESP32-WROOM-32" (at 149.5141 56.6999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "RF_Module:ESP32-WROOM-32" (at 147.32 129.54 0)
+    (property "Footprint" "YY_Common:ESP32-WROOM-32_39P-TH" (at 147.32 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" (at 139.7 90.17 0)
