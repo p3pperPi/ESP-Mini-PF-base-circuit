@@ -4204,7 +4204,7 @@
   (gr_text "v" (at 118.5 112.5 180) (layer "F.SilkS") (tstamp 2c61f3a9-32fb-4666-917f-269d9dfe1698)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
-  (gr_text "ESP Mini PF Base Circuit\n38 x 63\nRev 0.1" (at 108 106) (layer "F.SilkS") (tstamp 82ef1b4d-9a26-4d39-a4d1-4423c6d4d577)
+  (gr_text "ESP Mini PF Base Circuit\n38 x 63\nRev 0.2" (at 108 106) (layer "F.SilkS") (tstamp 82ef1b4d-9a26-4d39-a4d1-4423c6d4d577)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
   (gr_text "MODE" (at 131.5 150.75 90) (layer "F.SilkS") (tstamp a17b9341-6db2-4611-a227-f665b64c5e75)
