@@ -7,7 +7,27 @@ ESP32を使用して、DCブラシモータを使用したライントレース�
 
 # 機能
 ## 電源
-[UZ1085L-22-TN3-R](https://www.lcsc.com/product-detail/Low-Dropout-Regulators-LDO_UZ1085L-AD-TN3-R_C146666.html)を使用し、マイコンへの電源供給を行います。
+J1の PHコネクタ、もしくは J3の XT60コネクタに電源を接続してください。
+J1の PHコネクタを使用する際は、J2の PHコネクタにスイッチをつないでください。
+
+入力可能な電圧の範囲はは ** 30V** です。
+
+また、JP17をショートすることで、モータ電源にUSB 5Vを使用することが可能です。
+ただし、JP17をショートした状態で電源コネクタに5V以外の電圧をかけると、接続した機器が破損します。
+**JP17をショートさせた際は、絶対に電源コネクタから給電は行わないでください。**
+なお、JP17にはダイオードを入れて逆流防止を行うことも可能です。その際は、[SBM245L](https://akizukidenshi.com/catalog/g/g117439/)を使用してください。
+
+
+
+入力電源は、DCDCコンバータモジュール[CN39033A](https://japanese.alibaba.com/product-detail/CN3903-3A-Mini-Buck-Step-Down-1600380707339.html)を使用して5Vまで電圧を下げられます。
+
+| 項目             | 値  | 単位 |
+| ---------------- | --- | ---- |
+| 最大定格入力電圧 | 30  | V    |
+| 出力電流(Max.)   | 3   | A    |
+
+
+上で生成された5Vから、[UZ1085L-22-TN3-R](https://www.lcsc.com/product-detail/Low-Dropout-Regulators-LDO_UZ1085L-AD-TN3-R_C146666.html)を使用し、マイコンへの電源供給を行います。
 | 項目             | 値  | 単位 |
 | ---------------- | --- | ---- |
 | 最大定格入力電圧 | 18  | V    |
@@ -16,64 +36,106 @@ ESP32を使用して、DCブラシモータを使用したライントレース�
 
 ## マイコン
 ESP32-WROOM-32を使用します。  
-[CH340X](https://www.lcsc.com/product-detail/USB-Converters_WCH-Jiangsu-Qin-Heng-CH340X_C3035748.html?s_z=n_CH340X)を使用した書き込み回路を持ちます。SW1を押下しながら電源を投入すると、書き込みモードになります。
+[CH340X](https://www.lcsc.com/product-detail/USB-Converters_WCH-Jiangsu-Qin-Heng-CH340X_C3035748.html?s_z=n_CH340X)を使用した書き込み回路を持ちます。
 
 
 ## DCブラシモータ
-モータドライバC[P2119LDTR](https://www.lcsc.com/product-detail/brushed-dc-motor-drivers_xblw-cp2119ldtr-xblw_C42395498.html)を使用して、DCモータを制御します。
+モータドライバIC[CP3119MDTR](https://www.lcsc.com/product-detail/Brushed-DC-Motor-Drivers_XBLW-CP3119MDTR-XBLW_C42395499.html)を使用して、DCモータを制御します。
 
 | 項目                  | 値       | 単位       |
 | --------------------- | -------- | ---------- |
-| 最大定格電圧          | 20       | V          |
-| 最大定格電流          | 9.0      | A          |
-| 推奨電源電圧範囲      | 3.0~18.0 | V          |
-| 推奨最大電流          | 5.0      | A          |
-| FETオン抵抗 (load=1A) | 58       | m $\Omega$ |
-| FETオン抵抗 (load=3A) | 71       | m $\Omega$ |
+| 最大定格電圧          | 32       | V          |
+| 最大定格電流          | 8.0      | A          |
+| 推奨電源電圧範囲      | 3.0~30.0 | V          |
+| 推奨最大電流          | 6.0      | A          |
+| FETオン抵抗 (load=1A) | 80       | m $\Omega$ |
+| FETオン抵抗 (load=3A) | 110      | m $\Omega$ |
+
+## エンコーダ
+A/B相のシングルエンドエンコーダをカウントします。エンコーダの電源電圧と信号入力は5Vです。
+[TXB0104RUT](https://lcsc.com/product-detail/translators-level-shifters_texas-instruments-txb0104rutr_C105266.html)により、5V信号を3.3Vに変換してESP32に信号を入力します。
+パルス入力ピンは、ソルダジャンパ(JP2 ~ 5)によりプルアップが可能です。
+プルアップの有無については、[ジャンパの機能](#ジャンパの機能)を参照してください。
+
+
+## 汎用IO
+サーボモータ、センサ入力等のための、汎用のIOです。
+ピンアサインは下記の通りです。
+
+| ピン | 機能   |
+| ---- | ------ |
+| 1    | IOピン |
+| 2    | Vs     |
+| 3    | GND    |
+
+ピン番号は、[ピンアサイン](#ピンアサイン)を参照してください。
+
+Vsは、ソルダジャンパ(JP6 ~ 9)により電圧を選択可能です。
+選択される電圧は、[ジャンパの機能](#ジャンパの機能)を参照してください。
 
 ## フォトリフレクタ
 [ITR8307/S17/TR8(B)](https://www.lcsc.com/product-detail/Reflective-Optical-Interrupters_Everlight-Elec-ITR8307-S17-TR8-B_C81632.html?s_z=n_ITR8307-S17) を3つ搭載し、テープの判定を行います。
 
+また、外付けのLED・フォトトランジスタを使用することも可能です。いずれも外形3mmの砲弾型のものを使用してください。
+
+使用するフォトリフレクタの選択は、JP10～JP15 を使用してください。
+
 
 ## LED
 3mm砲弾型LEDを4つ搭載可能です。  
-D1は、電源投入時に点灯します。  
-D2, D3, D4はESP32から点灯/消灯 を管理可能です。
+D2は、電源投入時に点灯します。  
+D3, D4, D5はESP32から点灯/消灯 を管理可能です。
 
 # ピンアサイン
 
 ESP32-WROOM-32のピンアサインは下記の通りです。
 
-| ピン | IO pin   | 機能           | IN/OUT       |
-| ---- | -------- | -------------- | ------------ |
-| 27   | IO16     | モータL出力1   | OUT (PWM)    |
-| 28   | IO17     | モータL出力2   | OUT (PWM)    |
-| 30   | IO18     | モータR出力1   | OUT (PWM)    |
-| 31   | IO19     | モータR出力2   | OUT (PWM)    |
-| 34   | IO3/RxD0 | PCとのUART RxD | IN (COM.)    |
-| 35   | IO1/TxD0 | PCとのUART TxD | OUT (COM.)   |
-| 25   | IO0      | Boot           | -            |
-| 9    | IO33     | ラインセンサ1  | IN(Analog)   |
-| 6    | IO34     | ラインセンサ2  | IN(Analog)   |
-| 8    | IO32     | ラインセンサ3  | IN(Analog)   |
-| 33   | IO21     | LED 赤         | OUT(Digital) |
-| 36   | IO22     | LED 黄         | OUT(Digital) |
-| 37   | IO23     | LED 緑         | OUT(Digital) |
+| ピン | IO pin          | 機能                 | IN/OUT       |
+| ---- | --------------- | -------------------- | ------------ |
+| 27   | IO16            | モータL出力1         | OUT (PWM)    |
+| 28   | IO17            | モータL出力2         | OUT (PWM)    |
+| 30   | IO18            | モータR出力1         | OUT (PWM)    |
+| 31   | IO19            | モータR出力2         | OUT (PWM)    |
+| 16   | IO13            | エンコーダL入力1     | IN (PWM)     |
+| 13   | IO14            | エンコーダL入力2     | IN (PWM)     |
+| 10   | IO25            | エンコーダR入力1     | IN (PWM)     |
+| 11   | IO26            | エンコーダR入力2     | IN (PWM)     |
+| 34   | IO3/RxD0        | PCとのUART RxD       | IN (COM.)    |
+| 35   | IO1/TxD0        | PCとのUART TxD       | OUT (COM.)   |
+| 25   | IO0             | Boot                 | -            |
+| 9    | IO33            | ラインセンサ1        | IN(Analog)   |
+| 6    | IO34            | ラインセンサ2        | IN(Analog)   |
+| 8    | IO35            | ラインセンサ3        | IN(Analog)   |
+| 33   | IO21            | LED 赤               | OUT(Digital) |
+| 36   | IO22            | LED 黄               | OUT(Digital) |
+| 37   | IO23            | LED 緑               | OUT(Digital) |
+| 26   | IO4             | 汎用IO 0             | IN/OUT       |
+| 12   | IO27            | 汎用IO 1             | IN/OUT       |
+| 8    | IO32            | 汎用IO 2             | IN/OUT       |
+| 29   | IO5             | 汎用IO 3(プルアップ) | IN/OUT       |
+| 4    | IO36(SENSOR_VP) | 電源電圧監視(1/10)   | IN(Analog)   |
 
-なお、ESP32-S3も使用可能。その場合のピンアサインは下記の通りです。
 
-| ピン | IO pin | 機能           | IN/OUT       |
-| ---- | ------ | -------------- | ------------ |
-| 29   | IO36   | モータL出力1   | OUT (PWM)    |
-| 30   | IO37   | モータL出力2   | OUT (PWM)    |
-| 32   | IO39   | モータR出力1   | OUT (PWM)    |
-| 33   | IO40   | モータR出力2   | OUT (PWM)    |
-| 36   | RxD0   | PCとのUART RxD | IN (COM.)    |
-| 37   | TxD0   | PCとのUART TxD | OUT (COM.)   |
-| 27   | IO0    | Boot           | -            |
-| 9    | IO16   | ラインセンサ1  | IN(Analog)   |
-| 6    | IO6    | ラインセンサ2  | IN(Analog)   |
-| 8    | IO15   | ラインセンサ3  | IN(Analog)   |
-| 35   | IO42   | LED 赤         | OUT(Digital) |
-| 38   | IO2    | LED 黄         | OUT(Digital) |
-| 39   | IO1    | LED 緑         | OUT(Digital) |
+# ジャンパの機能
+
+ジャンパにより、機能を切り替えることができます。
+
+| ジャンパ | 機能             | モード1  | 機能1                                  | モード2  | 機能2                                 | デフォルト | 備考                                     |
+| -------- | ---------------- | -------- | -------------------------------------- | -------- | ------------------------------------- | ---------- | ---------------------------------------- |
+| JP1      | Power_SW_Disable | オープン | J2 パワースイッチが有効                | ショート | J2 パワースイッチが無効(常時ショート) | オープン   | -                                        |
+| JP2      | L1_PU            | オープン | エンコーダL1の入力は電圧入力           | ショート | エンコーダL1の入力をプルアップ(1k)    | オープン   | -                                        |
+| JP3      | L2_PU            | オープン | エンコーダL2の入力は電圧入力           | ショート | エンコーダL2の入力をプルアップ(1k)    | オープン   | -                                        |
+| JP4      | R1_PU            | オープン | エンコーダR1の入力は電圧入力           | ショート | エンコーダR1の入力をプルアップ(1k)    | オープン   | -                                        |
+| JP5      | R2_PU            | オープン | エンコーダR2の入力は電圧入力           | ショート | エンコーダR2の入力をプルアップ(1k)    | オープン   | -                                        |
+| JP6      | Vs_SEL0          | 3.3      | 汎用入力J9 の2番ピンを3.3Vにする       | Vin      | 汎用入力J9 の2番ピンをVinにする       | オープン   | オープンだと2番ピンはNC                  |
+| JP7      | Vs_SEL1          | 3.3      | 汎用入力J10 の2番ピンを3.3Vにする      | Vin      | 汎用入力J10 の2番ピンをVinにする      | オープン   | オープンだと2番ピンはNC                  |
+| JP8      | Vs_SEL2          | 3.3      | 汎用入力J11 の2番ピンを3.3Vにする      | Vin      | 汎用入力J11 の2番ピンをVinにする      | オープン   | オープンだと2番ピンはNC                  |
+| JP9      | Vs_SEL3          | 3.3      | 汎用入力J12 の2番ピンを3.3Vにする      | Vin      | 汎用入力J12 の2番ピンをVinにする      | オープン   | オープンだと2番ピンはNC                  |
+| JP10     | LED_SEL1         | SMD      | ラインセンサ(U8)の LEDを有効化         | DIP      | D6 のLEDを有効化                      | オープン   | オープンだとU8, D6いずれのLEDも光らない  |
+| JP11     | PT_SEL1          | SMD      | SENSOR1 の入力をラインセンサU8 にする  | DIP      | SENSOR1 の入力をQ1 にする             | オープン   | オープンだとSENSOR1 はN.C.               |
+| JP12     | LED_SEL2         | SMD      | ラインセンサ(U9)の LEDを有効化         | DIP      | D7 のLEDを有効化                      | オープン   | オープンだとU9, D7いずれのLEDも光らない  |
+| JP13     | PT_SEL2          | SMD      | SENSOR2 の入力をラインセンサU9 にする  | DIP      | SENSOR2 の入力をQ2 にする             | オープン   | オープンだとSENSOR2 はN.C.               |
+| JP14     | LED_SEL2         | SMD      | ラインセンサ(U10)の LEDを有効化        | DIP      | D8 のLEDを有効化                      | オープン   | オープンだとU10, D8いずれのLEDも光らない |
+| JP15     | PT_SEL2          | SMD      | SENSOR3 の入力をラインセンサU10 にする | DIP      | SENSOR3 の入力をQ1 にする             | オープン   | オープンだとSENSOR3 はN.C.               |
+| JP16     | Reseet           | オープン | 通常動作                               | ショート | リセット                              | オープン   | スイッチ取付可                           |
+| JP17     | USB＿Vs          | オープン | 外部電源をモータ電源とする             | ショート | USB電源をモータ電源とする             | オープン   | ショートの代わりにダイオードを使用可     |
