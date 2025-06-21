@@ -1,6 +1,4 @@
-//  HWに適したピン定義をインクルードする
 #include "../mini_PF_pins.hpp"
-// #include "../mini_PF_pins_S3.hpp"
 
 // テストにLEDを使用
 

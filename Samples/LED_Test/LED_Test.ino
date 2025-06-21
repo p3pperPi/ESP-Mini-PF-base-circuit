@@ -1,6 +1,4 @@
-//  HWに適したピン定義をインクルードする
 #include "../mini_PF_pins.hpp"
-// #include "../mini_PF_pins_S3.hpp"
 
 void setLED(bool RED,bool YEL,bool GRN){
     digitalWrite(PIN_LED_RED,RED);
