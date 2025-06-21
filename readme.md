@@ -109,9 +109,9 @@ ESP32-WROOM-32のピンアサインは下記の通りです。
 | 33   | IO21            | LED 赤               | OUT(Digital) |
 | 36   | IO22            | LED 黄               | OUT(Digital) |
 | 37   | IO23            | LED 緑               | OUT(Digital) |
-| 26   | IO4             | 汎用IO 0             | IN/OUT       |
+| 8    | IO32            | 汎用IO 0             | IN/OUT       |
 | 12   | IO27            | 汎用IO 1             | IN/OUT       |
-| 8    | IO32            | 汎用IO 2             | IN/OUT       |
+| 26   | IO4             | 汎用IO 2             | IN/OUT       |
 | 29   | IO5             | 汎用IO 3(プルアップ) | IN/OUT       |
 | 4    | IO36(SENSOR_VP) | 電源電圧監視(1/10)   | IN(Analog)   |
 
