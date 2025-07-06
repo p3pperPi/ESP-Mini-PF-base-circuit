@@ -21,14 +21,45 @@ volatile  int64_t pulse_R[SPEED_BUFFER_LENGTH];
 volatile  int64_t pulse_L[SPEED_BUFFER_LENGTH];
 volatile  int32_t pulse_diff_R[SPEED_BUFFER_LENGTH];
 volatile  int32_t pulse_diff_L[SPEED_BUFFER_LENGTH];
-volatile  int32_t crnt_pulse_per_microsec_R = 0;
-volatile  int32_t crnt_pulse_per_microsec_L = 0;
+volatile  int32_t crnt_pulse_per_sec_R = 0;
+volatile  int32_t crnt_pulse_per_sec_L = 0;
 volatile uint16_t pulse_itr = 0;
 
 
 
 volatile uint32_t time_diff = 0xFFFFFFFF;// 意図しない0割りを防ぐため大きな値を初期値とする
 volatile uint64_t last_read_time = 0;
+
+
+// 速度制御周り
+volatile  int32_t tgt_pulse_per_sec_R = 0;
+volatile  int32_t tgt_pulse_per_sec_L = 0;
+volatile  int32_t out_L = 0;
+volatile  int32_t out_R = 0;
+
+const     int32_t OUTTPUT_LIMIT_UPPER =  255; //出力の上限
+const     int32_t OUTTPUT_LIMIT_LOWER = -255; //出力の下限
+
+const     int32_t INTEGRAL_LIMIT = 0xFFFFF;
+const     int32_t DEFAULT_CONTROL_TIMESPAN = 10; // 制御周期のデフォルト値（ミリ秒）
+const     int32_t OUTPUT_SCALE_MULTIPLIER =    1; // 出力のスケール倍率
+const     int32_t OUTPUT_SCALE_DIVISOR    = 1000; // 出力のスケール除数
+// 出力スケールについて：
+// 入力値：パルス/マイクロ秒：～2000 程度
+// 出力値：-255 ～ 255
+// 入力値と出力値のオーダーを合わさるための係数
+
+int32_t integral_L = 0;
+int32_t integral_R = 0;
+int32_t error_L = 0;
+int32_t error_R = 0;
+int32_t prev_error_L = 0;
+int32_t prev_error_R = 0;
+
+int32_t Speed_Kp =  80;
+int32_t Speed_Ki =   1;
+int32_t Speed_Kd =   0;
+
 
 
 
@@ -48,10 +79,10 @@ int32_t getDiff(pcnt_unit_t unit,byte cnt_no = 0){
 
     // オーバーフローの処理
     // カウンタはオーバーフローすると0に戻る
-    if (cnt_diff > COUNTER_SKIP_THRESHOLD) {
+    if (cnt_diff < -COUNTER_SKIP_THRESHOLD) {
         // カウンタが最大値から0に戻った場合
         cnt_diff += COUNTER_MAX;
-    } else if (cnt_diff < -COUNTER_SKIP_THRESHOLD) {
+    } else if (cnt_diff > COUNTER_SKIP_THRESHOLD) {
         // カウンタが最小値から0に戻った場合
         cnt_diff += COUNTER_MIN;
     }
@@ -96,10 +127,79 @@ void ARDUINO_ISR_ATTR speedTimerInterrupt(){
     }
     L_ave /= SPEED_AVE_DIVISOR;
     R_ave /= SPEED_AVE_DIVISOR;
+    
+    crnt_pulse_per_sec_L = L_ave * 1000 / (int32_t)time_diff; 
+    crnt_pulse_per_sec_R = R_ave * 1000 / (int32_t)time_diff; 
 
 
-    crnt_pulse_per_microsec_L = L_ave * 1000 / (int32_t)time_diff; 
-    crnt_pulse_per_microsec_R = R_ave * 1000 / (int32_t)time_diff; 
+    // 速度制御
+    // 誤差の計算
+    error_L = tgt_pulse_per_sec_L - crnt_pulse_per_sec_L;
+    error_R = tgt_pulse_per_sec_R - crnt_pulse_per_sec_R;
+
+    integral_L += error_L * (int32_t)time_diff / DEFAULT_CONTROL_TIMESPAN;
+    integral_R += error_R * (int32_t)time_diff / DEFAULT_CONTROL_TIMESPAN;
+
+    if(integral_L >  INTEGRAL_LIMIT) integral_L =  INTEGRAL_LIMIT;
+    if(integral_R >  INTEGRAL_LIMIT) integral_R =  INTEGRAL_LIMIT;
+    if(integral_L < -INTEGRAL_LIMIT) integral_L = -INTEGRAL_LIMIT;
+    if(integral_R < -INTEGRAL_LIMIT) integral_R = -INTEGRAL_LIMIT;
+    
+
+    // 目標速度が0 → 出力は強制で0にする
+    if(tgt_pulse_per_sec_L == 0){
+        out_L = 0;
+    }else{
+        out_L = (int32_t)
+                (
+                    Speed_Kp * error_L + 
+                    Speed_Ki * integral_L +
+                    Speed_Kd * (error_L - prev_error_L) / ((int32_t)time_diff / DEFAULT_CONTROL_TIMESPAN)
+                ) * OUTPUT_SCALE_MULTIPLIER / OUTPUT_SCALE_DIVISOR;
+        if(out_L > OUTTPUT_LIMIT_UPPER) {
+            out_L = OUTTPUT_LIMIT_UPPER;
+        } else if(out_L < OUTTPUT_LIMIT_LOWER) {
+            out_L = OUTTPUT_LIMIT_LOWER;
+        }
+    }
+
+    if(tgt_pulse_per_sec_R == 0){
+        out_R = 0;
+    }else{
+        out_R = (int32_t)
+                (
+                    Speed_Kp * error_R + 
+                    Speed_Ki * integral_R +
+                    Speed_Kd * (error_R - prev_error_R) / ((int32_t)time_diff / DEFAULT_CONTROL_TIMESPAN)
+                ) * OUTPUT_SCALE_MULTIPLIER / OUTPUT_SCALE_DIVISOR;
+        
+        if(out_R > OUTTPUT_LIMIT_UPPER) {
+            out_R = OUTTPUT_LIMIT_UPPER;
+        } else if(out_R < OUTTPUT_LIMIT_LOWER) {
+            out_R = OUTTPUT_LIMIT_LOWER;
+        }
+    }
+
+    // 誤差の更新
+    prev_error_L = error_L;
+    prev_error_R = error_R;
+
+    // モータの出力
+    if(out_L > 0){
+        analogWrite(PIN_MOTOR_L_1, out_L);
+        analogWrite(PIN_MOTOR_L_2, 0);
+    }else{
+        analogWrite(PIN_MOTOR_L_1, 0);
+        analogWrite(PIN_MOTOR_L_2, -out_L);
+    }
+
+    if(out_R > 0){
+        analogWrite(PIN_MOTOR_R_1, out_R);
+        analogWrite(PIN_MOTOR_R_2, 0);
+    }else{
+        analogWrite(PIN_MOTOR_R_1, 0);
+        analogWrite(PIN_MOTOR_R_2, -out_R);
+    }
 
 
     portEXIT_CRITICAL_ISR(&speed_control_timer_mux);
@@ -200,6 +300,9 @@ void setup(){
 
     //タイマ基準等間隔処理(print)の初期化
     nextPrint = millis() + PRINT_INTERVAL;
+
+    tgt_pulse_per_sec_L = 2000;
+    tgt_pulse_per_sec_R = 1000;
 }
 
 
@@ -227,10 +330,10 @@ void loop(){
 
 
         // 平均計算後の速度
-        Serial.print("ave p/ms L : ");
-        Serial.print(crnt_pulse_per_microsec_L);
+        Serial.print("ave p/s L : ");
+        Serial.print(crnt_pulse_per_sec_L);
         Serial.print(",R");
-        Serial.print(crnt_pulse_per_microsec_R);
+        Serial.print(crnt_pulse_per_sec_R);
         Serial.println();
 
     
